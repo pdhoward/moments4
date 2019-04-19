@@ -114,12 +114,16 @@ module.exports = {
       }
     },
     'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
-    'gatsby-plugin-netlify',
+    'gatsby-plugin-sharp',    
+    {
+      resolve: 'gatsby-plugin-netlify',
+      options: {  
+        mergeSecurityHeaders: false,
+      },
+    },
     {
       resolve: 'gatsby-plugin-netlify-cms',
-      options: {
-        mergeSecurityHeaders: false,
+      options: {  
         modulePath: `${__dirname}/src/cms/cms.js`,
       }
     },
