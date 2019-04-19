@@ -24,7 +24,7 @@ module.exports = {
   ],
   author: {
     name: 'Strategic Machines',
-    photo: '/photo.jpg',
+    photo: '/logo.png',
     bio: 'Membership engagement through the mobile web',
     contacts: {
       email: '#',
