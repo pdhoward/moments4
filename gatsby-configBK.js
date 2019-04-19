@@ -1,11 +1,4 @@
-/* eslint-disable lines-around-directive */
-/* eslint-disable spaced-comment */
 'use strict';
-
-////////////////////////////////////////////
-// NOTES
-// eslint-disable-next-line no-trailing-spaces
-// removed sitemap from this config file 
 
 const siteConfig = require('./config.js');
 const postCssPlugins = require('./postcss-config.js');
@@ -143,7 +136,38 @@ module.exports = {
           head: true,
         },
       },
-    },    
+    },
+    {
+      resolve: 'gatsby-plugin-sitemap',
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                siteUrl
+              }
+            }
+            allSitePage(
+              filter: {
+                path: { regex: "/^(?!/404/|/404.html|/dev-404-page/)/" }
+              }
+            ) {
+              edges {
+                node {
+                  path
+                }
+              }
+            }
+          }
+        `,
+        output: '/sitemap.xml',
+        serialize: ({ site, allSitePage }) => allSitePage.edges.map((edge) => ({
+          url: site.siteMetadata.url + edge.node.path,
+          changefreq: 'daily',
+          priority: 0.7
+        }))
+      }
+    },
     {
       resolve: 'gatsby-plugin-manifest',
       options: {

@@ -1,13 +1,14 @@
 'use strict';
 
 module.exports = {
-  url: 'https://lumen.netlify.com',
+  url: 'https://suspicious-easley-22b3d4.netlify.com/',
   title: 'touch',
   subtitle: 'Membership engagement and conversation platform',
   copyright: '© All rights reserved.',
   disqusShortname: '',
   postsPerPage: 4,
   googleAnalyticsId: '',
+  siteUrl: 'https://suspicious-easley-22b3d4.netlify.com/',
   menu: [
     {
       label: 'Articles',
