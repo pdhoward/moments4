@@ -1,6 +1,6 @@
 <h1 align="center">
     <img alt="Moments" title="Moments" src="https://github.com/pdhoward/moments4/blob/master/static/photo.jpg" width="140"> </br>
-    Lumen
+    Moments
 </h1>
 
 <h4 align="center">
