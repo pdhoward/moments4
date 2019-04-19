@@ -23,7 +23,7 @@ module.exports = {
     }
   ],
   author: {
-    name: 'Startegic Machines',
+    name: 'Strategic Machines',
     photo: '/photo.jpg',
     bio: 'Membership engagement through the mobile web',
     contacts: {
