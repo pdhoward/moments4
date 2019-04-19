@@ -119,6 +119,7 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {
+        mergeSecurityHeaders: false,
         modulePath: `${__dirname}/src/cms/cms.js`,
       }
     },
