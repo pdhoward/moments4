@@ -125,7 +125,7 @@ module.exports = {
     'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-plugin-netlify',
-      options: {  
+      options: {
         mergeSecurityHeaders: false,
       },
     },
@@ -143,7 +143,7 @@ module.exports = {
           head: true,
         },
       },
-    },    
+    },
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
